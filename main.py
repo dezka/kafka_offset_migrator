@@ -83,12 +83,14 @@ def run_consumer_reset(bootstrap_servers, new_consumer_group):
         response = input(
             'Do the proposed changes look good to you? (y/n): ')
         if not response.lower().strip()[:1] == 'y':
+            os.remove(OUTPUT_FILE)
             sys.exit(1)
         else:
             print('\nProceeding...\n')
             response = input(
                 'Are you sure you want to execute these offset changes? (y/n): ')
             if not response.lower().strip()[:1] == 'y':
+                os.remove(OUTPUT_FILE)
                 sys.exit(1)
             else:
                 subprocess.run(execute_command.split())

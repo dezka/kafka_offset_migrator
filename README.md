@@ -6,7 +6,10 @@ This simple script was created to handle such a situation. Additionally, it can 
 
 ## Dependencies
 
-This depends on Python 3 and the [kafka-python](https://pypi.org/project/kafka-python/) package.
+This depends on:
+- Python 3
+- The [kafka-python](https://pypi.org/project/kafka-python/) package.
+- The `kafka-consumer-groups` Kafka CLI tool.
 
 ## Usage
 
