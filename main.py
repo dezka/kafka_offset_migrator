@@ -109,6 +109,7 @@ if __name__ == '__main__':
         '\nPlease enter the old consumer group you are migrating from: ')
     print("\nOld consumer group is set as: {}".format(old_consumer_group))
 
+    print("\nCollecting consumer group information...")
     old_group_topic_list = collect_topic_information(
         bootstrap_servers, old_consumer_group)
     print("\n{0} is curently subscribed to the following topics: {1}".format(
