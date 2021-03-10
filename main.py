@@ -117,7 +117,7 @@ if __name__ == '__main__':
 
     removed_topics = []
     remove_topics = input(
-        '\nWould you like to remove any of these topics so they are not part of the new consumer group? '
+            '\nWould you like to remove any of these topics so they are not part of the new consumer group? (y/n): '
     )
     if remove_topics.lower().strip()[:1] == 'y':
         removed_topics = input(
